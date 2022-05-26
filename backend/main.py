@@ -1,6 +1,5 @@
 from flask import Flask,render_template
-app=Flask(__name__)
-app.config['EXPLAIN_TEMPLATE_LOADING'] = True
+app=Flask(__name__,template_folder='../frontend/templates')
 
 
 @app.route("/")
