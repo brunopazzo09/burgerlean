@@ -3,4 +3,4 @@ app=flask(__name__)
 
 @app.route("/")
 def index():
-    render_template("index.html")
+    render_template("index.html") #index
