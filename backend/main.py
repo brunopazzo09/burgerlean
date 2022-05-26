@@ -1,6 +1,8 @@
-from flask import flask, render_template
-app=flask(__name__)
+from flask import Flask,render_template
+app=Flask(__name__)
+app.config['EXPLAIN_TEMPLATE_LOADING'] = True
+
 
 @app.route("/")
 def index():
-    render_template("index.html") #index
+    return render_template("index.html") #index
