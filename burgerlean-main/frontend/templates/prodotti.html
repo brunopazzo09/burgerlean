@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Prodotti</title>
+  <link href="{{ url_for('static', filename='styleProdotti.css') }}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section>
+    <img alt="logo" src="{{ url_for('static', filename='logo.png') }}" class="logo">
+    <h1>I nostri prodotti</h1>
+<div class="list">
+			<div class="product">
+				<img alt="panino1" src="{{ url_for('static', filename='panino2.png') }}">
+				<div><h2>SIPPER®</h2>
+          <p class="price">€7<sup>.00</sup></p>
+          <p class="descr">La ricetta del leggendario SIPPER® non è cambiata <b></b></p>
+				<br>
+				<a class="addToCart" onclick="addToCart(1)"><p>Add to cart</p></a></div>
+			</div>
+			<div class="product">
+				<img alt="panino2" src="{{ url_for('static', filename='panino1.png') }}">
+				<div><h2>BACON LEAN 3.0<sup>®</sup></h2>
+           <p class="price">€15<sup>.00</sup></p>
+          <p class="descr">L'evoluzione del Bacon Lean: 3 strati di carne alla griglia, 3 strati di Lean e 8 fette di delizioso bacon.</p>
+				<br>
+				<a class="addToCart" onclick="addToCart(2)"><p>Add to cart</p></a></div>
+			</div>
+			<div class="product">
+				<img alt="panino3" src="{{ url_for('static', filename='panino3.png') }}">
+				<div><h2>CHICKEN LEAN<sup>®</sup></h2>
+           <p class="price">€5<sup>.00</sup></p>
+          <p class="descr">Pollo croccante, pomodoro, lattuga e doppia LEAN, racchiusi in un morbido pane al mais</p>
+				<br>
+				<a class="addToCart" onclick="addToCart(3)"><p>Add to cart</p></a></div>
+			</div>
+ 			<div class="product">
+				<img alt="panino4" src="{{ url_for('static', filename='panino4.png') }}">
+				<div><h2>CRAZY CHIKEN LEAN<sup>®</sup></h2>
+           <p class="price">€10<sup>.00</sup></p>
+          <p class="descr">Pollo dorato, cipolla croccante, deliziosa salsa Cheddar e DRIPPOSISSIMA lean</p>
+				<br>
+				<a class="addToCart" onclick="addToCart(4)"><p>Add to cart</p></a></div>
+			</div> 
+</div>
+</section>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
